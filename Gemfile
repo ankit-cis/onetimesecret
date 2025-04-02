@@ -42,7 +42,7 @@ gem 'sysinfo'
 gem 'uri-redis', '~> 1.3.0'
 
 gem 'bcrypt'
-gem 'encryptor', '= 1.1.3'
+gem 'encryptor', '3.0.0'
 
 gem 'httparty'
 
