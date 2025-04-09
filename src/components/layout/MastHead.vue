@@ -121,13 +121,13 @@
           <router-link to="/"
                        class="group flex items-center"
                        :aria-label="$t('onetime-secret-homepage')">
-            <div class="relative">
-              <img id="logo"
-                   src="@/assets/img/onetime-logo-v3-xl.svg"
-                   class="size-12 rounded-md transition-transform sm:size-16"
-                   height="64"
-                   width="64"
-                   alt="" />
+            <div class="relative w-24 sm:w-32 md:w-40 lg:w-[13rem] aspect-[2.6]">
+              <img
+                id="logo"
+                src="@/assets/img/wisegroup.svg"
+                class="w-full h-full object-contain rounded-md transition-transform"
+                alt="Wise Group Logo"
+              />
             </div>
           </router-link>
           <!-- Jurisdiction selector section -->
@@ -201,28 +201,6 @@
             </div>
           </div>
         </div>
-        <router-link to="/">
-          <div class="ml-3 flex flex-col">
-            <span class="font-brand text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {{ $t('onetime-secret-literal') }}
-            </span>
-            <span class="text-xs text-gray-500 dark:text-gray-400">
-              {{ $t('tagline-signed') }}.
-              <em>{{ $t('tagline-sealed') }}. </em>
-              <span class="group/tooltip relative inline-block">
-                {{ $t('tagline-delivered') }}.<sup
-                    class="text-[0.7em] text-gray-500 dark:text-gray-400 [animation:pulse_4s_ease-in-out_infinite] group-hover/tooltip:[animation:none]">*</sup>
-                <span class="absolute left-full top-0 ml-1 hidden group-hover/tooltip:block
-                              bg-gray-200/80 dark:bg-gray-800/80 text-gray-500 dark:text-gray-400
-                              text-xs rounded py-1 px-2 w-max">
-                  <sup class="text-[0.7em] text-gray-500 dark:text-gray-400">*</sup>
-                  {{ $t('recipient-delivery-is-optional') }}
-                </span>
-              </span>
-            </span>
-          </div>
-        </router-link>
-
       </div>
 
       <nav v-if="displayNavigation"

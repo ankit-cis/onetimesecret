@@ -13,7 +13,7 @@ const activity = [
     person: {
       name: 'Chelsea Hagon',
       imageUrl:
-        '/v3/img/onetime-logo-v3-xl.svg',
+        '/v3/img/wisegroup.svg',
     },
     comment: 'Called client, they reassured me the invoice would be paid by the 25th.',
     date: '3d ago',

@@ -65,7 +65,7 @@ module Onetime
         # Regular template vars used one
         self[:description] = i18n[:COMMON][:description]
         self[:keywords] = i18n[:COMMON][:keywords]
-        self[:page_title] = "Onetime Secret"
+        self[:page_title] = "Wise Group"
         self[:frontend_host] = frontend_host
         self[:frontend_development] = frontend_development
         self[:no_cache] = false
