@@ -123,10 +123,17 @@
                        :aria-label="$t('onetime-secret-homepage')">
             <div class="relative w-24 sm:w-32 md:w-40 lg:w-[13rem] aspect-[2.6]">
               <img
-                id="logo"
-                src="@/assets/img/wisegroup.svg"
-                class="w-full h-full object-contain rounded-md transition-transform"
+                id="logo-light"
+                src="@/assets/img/wisegroup.jpg"
+                class="w-full h-full object-contain rounded-md transition-transform dark:hidden"
                 alt="Wise Group Logo"
+              />
+              <!-- Dark mode logo -->
+              <img
+                id="logo-dark"
+                src="@/assets/img/wisegroup.svg"
+                class="w-full h-full object-contain rounded-md transition-transform hidden dark:block"
+                alt="Wise Group Logo (Dark)"
               />
             </div>
           </router-link>
