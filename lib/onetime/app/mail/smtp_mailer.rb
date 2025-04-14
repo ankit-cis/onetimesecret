@@ -24,7 +24,7 @@ module Onetime::App
         end
 
         OT.li "> [send-start] [to: #{obscured_address}]"
-
+        OT.li "> [Body] [Html: #{html_content}]"
         begin
           mailer_response = ::Mail.deliver do
             # Send emails from a known address that we control. This

@@ -147,7 +147,7 @@ const togglePasswordVisibility = () => {
 
     <!-- Submit button -->
     <div>
-      <button
+      <!-- <button
         type="submit"
         class="group relative flex w-full justify-center
                      rounded-md
@@ -158,7 +158,7 @@ const togglePasswordVisibility = () => {
                      focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2
                      dark:bg-brand-600 dark:hover:bg-brand-700 dark:focus:ring-offset-gray-800">
         {{ $t('web.login.button_sign_in') }}
-      </button>
+      </button> -->
     </div>
   </form>
 </template>

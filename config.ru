@@ -8,6 +8,8 @@
 #
 
 # Environment Variables
+require 'dotenv'
+Dotenv.load
 ENV['RACK_ENV'] ||= 'production'
 ENV['APP_ROOT'] = File.expand_path(__dir__).freeze
 app_root = ENV['APP_ROOT']

@@ -246,33 +246,33 @@
 
         <template v-else>
           <template v-if="windowProps.authentication.enabled">
-            <router-link v-if="windowProps.authentication.signup"
+            <!-- <router-link v-if="windowProps.authentication.signup"
                          to="/signup"
                          :title="$t('signup-individual-and-business-plans')"
                          class="font-bold text-gray-600 transition-colors duration-200 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white">
               {{ $t('web.COMMON.header_create_account') }}
-            </router-link>
-            <span class="text-gray-400"
+            </router-link> -->
+            <!-- <span class="text-gray-400"
                   aria-hidden="true"
                   role="separator">
               |
-            </span>
+            </span> -->
             <router-link to="/about"
                          :title="$t('about-onetime-secret')"
                          class="text-gray-600 transition-colors duration-200 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white">
               {{ $t('web.COMMON.header_about') }}
             </router-link>
-            <span class="text-gray-400"
+            <!-- <span class="text-gray-400"
                   aria-hidden="true"
                   role="separator">
               |
-            </span>
-            <router-link v-if="windowProps.authentication.signin"
+            </span> -->
+            <!-- <router-link v-if="windowProps.authentication.signin"
                          to="/signin"
                          :title="$t('log-in-to-onetime-secret')"
                          class="text-gray-600 transition-colors duration-200 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white">
               {{ $t('web.COMMON.header_sign_in') }}
-            </router-link>
+            </router-link> -->
           </template>
 
           <router-link v-else

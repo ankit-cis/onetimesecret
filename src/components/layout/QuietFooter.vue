@@ -19,8 +19,7 @@
   const windowProps = WindowService.getMultiple([
     'regions_enabled', 'regions', 'authentication', 'i18n_enabled',
   ]);
-
-  const companyName = ref('OnetimeSecret.com');
+  const companyName = ref('wisegroup.com.au');
 </script>
 <template>
   <footer

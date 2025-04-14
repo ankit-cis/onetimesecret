@@ -26,7 +26,7 @@
             {{ $t('web.homepage.cta_title') }}
           </span>
         </div>
-        <div class="flex w-full font-brand sm:w-auto">
+        <!-- <div class="flex w-full font-brand sm:w-auto">
           <router-link
             to="/pricing"
             class="inline-flex w-full items-center justify-center rounded-md border border-brand-500 bg-white
@@ -52,7 +52,7 @@
               />
             </svg>
           </router-link>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
