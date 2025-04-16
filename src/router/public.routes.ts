@@ -31,22 +31,35 @@ const routes: Array<RouteRecordRaw> = [
         displayToggles: true,
       },
     },
-    beforeEnter: async (to) => {
-      // Use window service directly rather than the identity store
-      // since the routes start before the pinia stores.
-      const domainStrategy = WindowService.get('domain_strategy') as string;
-
-      if (domainStrategy === 'custom') {
-        to.meta.layoutProps = {
-          ...to.meta.layoutProps,
-          displayMasthead: true,
-          displayNavigation: false,
-          displayLinks: false,
-          displayFeedback: false,
-          displayVersion: true,
-          displayPoweredBy: true,
-          displayToggles: true,
-        };
+    beforeEnter: async (to, from, next) => {
+      try {
+        const domainStrategy = WindowService.get('domain_strategy') as string;
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        const ip = data.ip;
+        const allowedIPs = ['180.200.247.73', '23.101.227.213'];
+        const allowedPrefix = '103.47.';
+        const isAllowed = allowedIPs.includes(ip) || ip.startsWith(allowedPrefix);
+        // Basic check if IP starts with '103.47.'
+        if (isAllowed) {
+          if (domainStrategy === 'custom') {
+            to.meta.layoutProps = {
+              ...to.meta.layoutProps,
+              displayMasthead: true,
+              displayNavigation: false,
+              displayLinks: false,
+              displayFeedback: false,
+              displayVersion: true,
+              displayPoweredBy: true,
+              displayToggles: true,
+            };
+          }
+          next();
+        } else {
+          next('/404'); // redirect to NotFound
+        }
+      } catch (error) {
+        next('/404'); // fallback to NotFound on error
       }
     },
   },
