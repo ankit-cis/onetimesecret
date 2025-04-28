@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
         const response = await fetch('https://api.ipify.org?format=json');
         const data = await response.json();
         const ip = data.ip;
-        const allowedIPs = ['180.200.247.73', '23.101.227.213'];
+        const allowedIPs = ['180.200.247.73', '23.101.227.213', '14.200.105.54'];
         const allowedPrefix = '103.47.';
         const isAllowed = allowedIPs.includes(ip) || ip.startsWith(allowedPrefix);
         // Basic check if IP starts with '103.47.'
