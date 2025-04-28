@@ -24,7 +24,7 @@ If you discover a security vulnerability within this project, we encourage you t
 
 ### How to Report
 
-1. **Email**: Send an email to `security@onetimesecret.com` with the subject line "Vulnerability Report: [Brief Description]".
+1. **Email**: Send an email to `security@secure.wisegroup.com.au` with the subject line "Vulnerability Report: [Brief Description]".
 2. **Details**: Include as much information as possible about the vulnerability. This should include:
    - A detailed description of the vulnerability.
    - Steps to reproduce the issue.
@@ -46,4 +46,4 @@ If you discover a security vulnerability within this project, we encourage you t
 
 We take your privacy seriously. All reports will be kept confidential, and we will work with you to ensure that any details of the vulnerability are not disclosed until a fix is in place.
 
-Thank you for helping us keep Onetime Secret secure and excellent!
+Thank you for helping us keep WiseGroup Secret secure and excellent!

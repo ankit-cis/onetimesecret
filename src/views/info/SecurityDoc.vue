@@ -70,7 +70,7 @@ import EmailObfuscator from '@/components/EmailObfuscator.vue';
       <li class="mb-2">
         <strong>{{ $t('web.COMMON.field_email') }}</strong>{{ $t('web.security.send-an-email-to') }}
         <EmailObfuscator
-          email="security@onetimesecret.com"
+          email="security@secure.wisegroup.com.au"
           subject="Vulnerability Report: [Brief Description]"
         />
         {{ $t('web.security.with-the-subject-line-vulnerability-report-brief') }}
