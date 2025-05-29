@@ -51,7 +51,7 @@
       <!-- Canonical alert styling -->
       <div
         :class="[
-          'border-l-4 border-brandcomp-500 bg-brandcomp-50 dark:bg-brandcomp-900',
+          'border-l-4 border-gray-500 bg-brandcomp-50 dark:bg-gray-600',
           branded ? 'p-4' : 'mb-8 p-5',
         ]">
         <p :class="['text-brandcomp-700 dark:text-brandcomp-200', 'text-lg font-medium']">

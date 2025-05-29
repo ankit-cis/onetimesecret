@@ -115,7 +115,7 @@
     <template #reveal="{ record, details }">
       <div class="space-y-4">
         <h2
-          class="text-brand-600 dark:text-brand-100"
+          class="text-brand-500 dark:text-brand-500"
           id="secret-heading">
           {{ $t('web.shared.this_message_for_you') }}
         </h2>

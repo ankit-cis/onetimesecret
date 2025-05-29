@@ -5,15 +5,17 @@
 
 @layer base {
   html {
-    font-family: theme('fontFamily.serif');
+    font-family:  "Open Sans", sans-serif;
   }
   h1,h2,h3,h4,h5 {
-    font-family: theme('fontFamily.brand');
+    /* font-family: theme('fontFamily.brand'); */
+    font-family: Effra, sans-serif;
     /*margin: theme('spacing.5') 0;*/
   }
 
   button, a.block {
-    font-family: theme('fontFamily.brand');
+     font-family: Effra, sans-serif;
+    /* font-family: theme('fontFamily.brand'); */
   }
   h1 {
     @apply text-4xl font-bold text-gray-900 mb-3;

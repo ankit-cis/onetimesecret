@@ -8,14 +8,26 @@ defineProps<Props>();
 <template>
   <div>
     <div class="bg-white dark:bg-gray-900">
-      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-7">
         <div class="text-center">
-          <h2
-            class="text-base font-semibold
+          <div
+            class="flex justify-center font-semibold
             uppercase tracking-wide
-            text-brandcomp-700 opacity-40 dark:text-brandcomp-600">
-            {{ $t('onetime-secret') }}
-          </h2>
+            text-brandcomp-700 dark:text-brandcomp-600">
+            <img
+                id="logo-light"
+                src="@/assets/img/wisegroup.jpg"
+                class="w-full h-full object-contain rounded-md transition-transform dark:hidden w-24 sm:w-32 md:w-40 lg:w-[13rem] aspect-[2.6]"
+                alt="Wise Group Logo"
+              />
+              <!-- Dark mode logo -->
+              <img
+                id="logo-dark"
+                src="@/assets/img/wisegroup.svg"
+                class="w-full h-full object-contain rounded-md transition-transform hidden dark:block w-24 sm:w-32 md:w-40 lg:w-[13rem] aspect-[2.6]"
+                alt="Wise Group Logo (Dark)"
+              />
+        </div>
           <h3
             class="mt-1 text-3xl font-extrabold
               text-gray-500 dark:text-gray-300

@@ -128,7 +128,7 @@
     <!-- Footer -->
     <div class="mt-4 flex items-baseline justify-between p-3 sm:p-4">
       <slot name="footer">
-        <p class="flex items-center text-xs italic text-gray-400 dark:text-gray-500 sm:text-sm">
+        <p class="flex items-center text-xs italic text-gray-400 dark:text-brand-500 sm:text-sm">
           <OIcon
             collection="mdi"
             name="information"

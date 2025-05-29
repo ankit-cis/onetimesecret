@@ -120,7 +120,7 @@ const closeTruncatedWarning = (event: Event) => {
     <template #warnings>
       <div>
         <p v-if="!record?.verification"
-           class="text-sm text-branddim-500 dark:text-gray-500"
+           class="text-sm text-branddim-500 dark:text-brand-500"
            role="alert"
            aria-live="polite">
           ({{ $t('web.COMMON.careful_only_see_once') }})
@@ -154,8 +154,8 @@ const closeTruncatedWarning = (event: Event) => {
             shadow-sm transition-colors duration-150
             ease-in-out hover:bg-brand-600 hover:shadow
             focus:outline-none focus:ring-2 focus:ring-brand-500
-            focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-brand-700
-            dark:text-brand-100 dark:hover:bg-brand-600"
+            focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-brand-500
+            dark:text-brand-100 dark:hover:bg-brand-500"
                 :aria-label="isCopiedText"
                 :aria-pressed="isCopied">
           <svg v-if="!isCopied"

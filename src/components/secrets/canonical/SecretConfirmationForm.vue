@@ -77,7 +77,7 @@ const submitForm = async () => {
         />
         <p
           id="passphrase-description"
-          class="text-sm text-gray-500 dark:text-gray-400">
+          class="text-sm text-gray-500 dark:text-brand-500">
           {{ $t('web.COMMON.careful_only_see_once') }}
         </p>
       </div>
@@ -87,8 +87,8 @@ const submitForm = async () => {
         :disabled="isSubmitting"
         :class="[
           'w-full rounded-md bg-brand-500 px-6 py-3 text-3xl font-semibold text-white transition duration-150 ease-in-out',
-          'hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2',
-          'disabled:cursor-not-allowed disabled:opacity-50 dark:bg-brand-600 dark:hover:bg-brand-600 dark:focus:ring-brand-400'
+          'hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2',
+          'disabled:cursor-not-allowed disabled:opacity-50 dark:bg-brand-500 dark:hover:bg-brand-500 dark:focus:ring-brand-400'
         ]"
         aria-live="polite">
         <span class="sr-only">{{ isSubmitting ? 'Submitting...' : 'Click to continue' }}</span>
