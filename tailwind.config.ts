@@ -59,9 +59,9 @@ export default {
   theme: {
     fontFamily: {
       serif: defaultTheme.fontFamily.serif,
-      sans: defaultTheme.fontFamily.sans,
+      sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       /* In CSS: font-family: theme('fontFamily.brand'); */
-      brand: ['Zilla Slab', ...defaultTheme.fontFamily.serif],
+      brand: ['Effra', ...defaultTheme.fontFamily.sans],
       mono: defaultTheme.fontFamily.mono,
     },
     extend: {
