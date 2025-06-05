@@ -14,7 +14,7 @@ const props = defineProps<Props>();
 
 const linkClass = computed(() => {
   return props.secretMetadata.is_destroyed
-    ? 'line-through italic text-gray-400 dark:text-gray-500'
+    ? 'line-through text-gray-400 dark:text-gray-500'
     : 'no-underline';
 });
 
@@ -42,7 +42,7 @@ const formattedDate = computed(() =>
   </router-link>
   <span class="ml-2 text-gray-500 dark:text-gray-400"> - </span>
   <em
-    class="italic text-gray-500 dark:text-gray-400"
+    class="text-gray-500 dark:text-gray-400"
     :title="secretMetadata.updated.toLocaleString()">
     {{ secretMetadata.is_received ? $t('web.COMMON.word_received') : '' }}
     {{ secretMetadata.is_burned ? $t('web.COMMON.word_burned') : '' }} {{ formattedDate }}

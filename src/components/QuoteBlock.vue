@@ -37,7 +37,7 @@ const currentTestimonial = computed(() => testimonials[currentIndex.value]);
           </svg>
           <span class="text-sm font-medium text-gray-500 dark:text-gray-400">{{ $t('artificial-feedback') }}</span>
         </div>
-        <blockquote class="mb-4 text-lg font-medium italic text-gray-900 dark:text-white sm:text-xl">
+        <blockquote class="mb-4 text-lg font-medium text-gray-900 dark:text-white sm:text-xl">
           "{{ currentTestimonial.quote }}"
         </blockquote>
         <div class="flex items-center">

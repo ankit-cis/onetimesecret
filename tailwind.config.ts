@@ -1,3 +1,4 @@
+import { FontFamily } from '@/schemas';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import defaultTheme from 'tailwindcss/defaultTheme';
@@ -58,8 +59,9 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      serif: defaultTheme.fontFamily.serif,
-      sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+      serif: defaultTheme.fontFamily.sans,
+      sans: ['Open Sans Regular'],
+      sansBold: ['Open Sans SemiBold'],
       /* In CSS: font-family: theme('fontFamily.brand'); */
       brand: ['Effra', ...defaultTheme.fontFamily.sans],
       mono: defaultTheme.fontFamily.mono,
@@ -160,36 +162,21 @@ export default {
   plugins: [
     forms(),
     typography(),
-
     function ({ addBase }: { addBase: (config: any) => void }) {
       addBase({
         '@font-face': [
           {
-            fontFamily: 'Zilla Slab',
-            src: "url('./fonts/zs/ZillaSlab-Regular.woff2') format('woff2'), url('./fonts/zs/ZillaSlab-Regular.woff') format('woff')",
+            FontFamily: 'Open Sans Regular',
+            src: "url('./fonts/Open_Sans/static/OpenSans-Regular.ttf') format('ttf')",
             fontWeight: '400',
             fontStyle: 'normal',
             fontDisplay: 'fallback',
           },
           {
-            fontFamily: 'Zilla Slab',
-            src: "url('./fonts/zs/ZillaSlab-Bold.woff2') format('woff2'), url('./fonts/zs/ZillaSlab-Bold.woff') format('woff')",
-            fontWeight: '700',
-            fontStyle: 'normal',
-            fontDisplay: 'fallback',
-          },
-          {
-            fontFamily: 'Zilla Slab',
-            src: "url('./fonts/zs/ZillaSlab-Italic.woff2') format('woff2'), url('./fonts/zs/ZillaSlab-Italic.woff') format('woff')",
+            FontFamily: 'Open Sans SemiBold',
+            src: "url('./fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('ttf')",
             fontWeight: '400',
-            fontStyle: 'italic',
-            fontDisplay: 'fallback',
-          },
-          {
-            fontFamily: 'Zilla Slab',
-            src: "url('./fonts/zs/ZillaSlab-BoldItalic.woff2') format('woff2'), url('./fonts/zs/ZillaSlab-BoldItalic.woff') format('woff')",
-            fontWeight: '700', // bold weight for italic
-            fontStyle: 'italic',
+            fontStyle: 'normal',
             fontDisplay: 'fallback',
           },
         ],

@@ -40,7 +40,7 @@ defineProps<Props>();
         </ul>
         <p
           v-else
-          class="italic text-gray-600 dark:text-gray-400">
+          class=" text-gray-600 dark:text-gray-400">
           {{ $t('go-on-then') }}
           <router-link
             to="/"
@@ -65,7 +65,7 @@ defineProps<Props>();
         </ul>
         <p
           v-else
-          class="italic text-gray-600 dark:text-gray-400">
+          class=" text-gray-600 dark:text-gray-400">
           {{ $t('web.COMMON.word_none') }}
         </p>
       </section>

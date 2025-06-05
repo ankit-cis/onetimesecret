@@ -54,7 +54,7 @@ const closeDeleteModal = () => {
       {{ $t('any-secrets-you-wish-to-remove') }} <span
         class="underline">{{ $t('burn-them-before-continuing') }}</span>.
     </li>
-    <li>{{ $t('deleting-your-account-is') }} <span class="italic">{{ $t('permanent-and-non-reversible') }}</span></li>
+    <li>{{ $t('deleting-your-account-is') }} <span class="">{{ $t('permanent-and-non-reversible') }}</span></li>
   </ul>
   <button
     @click="openDeleteModal"

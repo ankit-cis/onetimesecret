@@ -5,18 +5,23 @@
 
 @layer base {
   html {
-    font-family:  theme('fontFamily.sans');
-    font-weight: 400 !important;
+     font-family: "Open Sans", sans-serif !important;
+     font-style: normal;
+  }
+  body {
+   font-family: "Open Sans", sans-serif !important;
+   font-style: normal;
   }
   h1,h2,h3,h4,h5 {
     /* font-family: theme('fontFamily.brand'); */
     font-family: theme('fontFamily.brand');
-    font-weight: 400 !important;
     /*margin: theme('spacing.5') 0;*/
   }
 
   button, a.block {
-     font-family: theme('fontFamily.brand');
+    font-family: "Open Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
     /* font-family: theme('fontFamily.brand'); */
   }
   h1 {

@@ -187,7 +187,7 @@ const closeTruncatedWarning = (event: Event) => {
 
         <!-- Navigation -->
         <div v-if="!record?.verification"
-             class="mt-24 text-center text-sm text-slate-500 dark:text-slate-400 italic">
+             class="mt-24 text-center text-sm text-slate-500 dark:text-slate-400">
           <p>
             {{ $t('you-can-safely-close-this-tab') }}
           </p>

@@ -28,7 +28,7 @@ const props = defineProps<{
           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
         </svg>
 
-        <p class="mb-6 text-lg italic leading-relaxed text-gray-700 dark:text-gray-300">
+        <p class="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
           "{{ props.testimonial.quote }}"
         </p>
 
@@ -49,7 +49,7 @@ const props = defineProps<{
       </div>
 
       <div class="bg-gray-100 px-6 py-4 dark:bg-gray-700">
-        <p class="text-sm italic text-gray-600 dark:text-gray-400">
+        <p class="text-sm text-gray-600 dark:text-gray-400">
           {{ $t('note') }}: <span class="">{{ $t('this-quote-was-generated-by') }} <a
             href="https://www.anthropic.com/news/claude-3-5-sonnet"
             class="underline"

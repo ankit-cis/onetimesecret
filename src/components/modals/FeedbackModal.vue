@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
 
           <FeedbackModalForm :show-red-button="true" />
 
-          <p class="mt-6 text-center text-sm italic text-gray-500 dark:text-gray-400">
+          <p class="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
             <RouterLink to="/feedback"
                         class="underline">{{ $t('help-us-improve') }}</RouterLink>{{ $t('all-feedback-welcome') }}
           </p>

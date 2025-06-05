@@ -193,7 +193,7 @@ onUnmounted(() => {
             <h5 class="mb-2 text-sm font-bold text-gray-700 dark:text-gray-200">
               {{ $t('ai-generated-testimonial') }}:
             </h5>
-            <blockquote class="text-sm italic text-gray-600 dark:text-gray-300">
+            <blockquote class="text-sm text-gray-600 dark:text-gray-300">
               "{{ randomTestimonial.quote }}"
             </blockquote>
             <div class="mt-2 flex items-center justify-between">
