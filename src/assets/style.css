@@ -6,10 +6,12 @@
 @layer base {
   html {
     font-family:  theme('fontFamily.sans');
+    font-weight: 400 !important;
   }
   h1,h2,h3,h4,h5 {
     /* font-family: theme('fontFamily.brand'); */
     font-family: theme('fontFamily.brand');
+    font-weight: 400 !important;
     /*margin: theme('spacing.5') 0;*/
   }
 
