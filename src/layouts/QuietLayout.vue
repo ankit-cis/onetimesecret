@@ -24,7 +24,7 @@
     </template>
     <template #main>
       <main
-        class="container mx-auto max-w-3xl p-4"
+        class="container mx-auto max-w-4xl p-4"
         name="QuietLayout">
         <slot></slot>
       </main>
