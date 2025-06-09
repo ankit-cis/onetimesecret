@@ -24,7 +24,7 @@ defineProps<Props>();
               <img
                 id="logo-dark"
                 src="@/assets/img/wisegroup.svg"
-                class="w-full h-full object-contain rounded-md transition-transform hidden dark:block w-24 sm:w-32 md:w-40 lg:w-[13rem] aspect-[2.6]"
+                class="w-32 sm:w-40 md:w-52 lg:w-[18rem] aspect-[2.6] h-auto object-contain rounded-md transition-transform hidden dark:block"
                 alt="Wise Group Logo (Dark)"
               />
         </div>
@@ -35,7 +35,7 @@ defineProps<Props>();
             {{ $t('youve-got-secret-mail') }}
           </h3>
           <p
-            class="mx-auto mt-5 max-w-xl text-xl
+            class="mx-auto mt-5 max-w-2xl text-xl
               text-gray-400 dark:text-gray-400">
             {{ $t('a-secure-one-time-message-awaits-you') }} <br />
             {{ $t('before-you-open-it-heres-what-you-should-know') }}
