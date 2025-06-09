@@ -17,7 +17,7 @@ defineProps<Props>();
             <img
                 id="logo-light"
                 src="@/assets/img/wisegroup.jpg"
-                class="w-32 sm:w-40 md:w-52 lg:w-[18rem] aspect-[2.6] h-auto object-contain rounded-md transition-transform hidden dark:block"
+                class="w-32 sm:w-40 md:w-52 lg:w-[18rem] aspect-[2.6] h-auto object-contain rounded-md transition-transform dark:hidden"
                 alt="Wise Group Logo"
               />
               <!-- Dark mode logo -->
