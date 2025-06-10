@@ -33,9 +33,7 @@ const primaryColorStyle = computed(() => {
 <template>
   <div>
     <!-- All along the watch tower -->
-    <div class="fixed left-0 top-0 z-50 h-1 w-full"
-         :class="primaryColorClass"
-         :style="primaryColorStyle"></div>
+    <div class="fixed left-0 top-0 z-50 h-1 w-full" style="background-color: rgb(0, 0, 0);" :class="primaryColorClass" ></div>
 
     <!-- Good morning Vietnam -->
     <GlobalBroadcast v-if="displayGlobalBroadcast"
